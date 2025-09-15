@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden-Joe Osegbe's Portfolio</title>
+    
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="intro">
+            <h1>Golden-Joe Osegbe</h1>
+            <p>
+                <em>Experienced Technical Support and Card Switching Specialist</em>
+            </p>
+            <p>Email: <a href="mailto:osegbegoldenjoe1@gmail.com">osegbegoldenjoe1@gmail.com</a> | Mobile: +2347061116652</p>
+        </section>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>Golden-Joe Osegbe is an experienced Technical Support and Card Switching Specialist with over 5 years in the financial and technology sectors. He is skilled in supporting mission-critical systems and delivering seamless card management and payment solutions across diverse regions. He has a proven track record in technical support, IT service delivery, and business development, with expertise in card processing systems, incident management, and backend engineering.</p>
+            <h3>Key Skills</h3>
+            <ul style="list-style-type: disc;">
+                <li><strong>Technical Proficiency:</strong> Python, FastAPI, Backend Development, Kubernetes (KCNA Certified), Docker, MSSQL, PostgreSQL, MySQL, JIRA, Microsoft CRM, Windows, Linux, Git</li>
+                <li><strong>ITSM & Standards:</strong> ISO 22301 BCMS Lead Implementer, ISO 20000</li>
+                <li><strong>Professional Competencies:</strong> Effective Communication, Cross-functional Collaboration, Complex Problem-Solving, Customer Relationship Management</li>
+            </ul>
+        </section>
+
+        <section id="work">
+            <h2>Work Experience</h2>
+            <p>Here is an overview of my professional experience and responsibilities.</p>
+            
+            <article>
+                <h3>Moniepoint Inc.</h3>
+                <h4>Technical Support and Implementation Engineer (December 2023 - Present)</h4>
+                <ul>
+                    <li>Provided tier-two application support for production systems, resolving issues and escalating as needed.</li>
+                    <li>Collaborated with product and engineering teams to fix bugs and implement software upgrades.</li>
+                    <li>Managed team ticket queues to ensure timely resolution of customer inquiries and technical issues.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Access Bank PLC</h3>
+                <h4>Card Switching & Channels Application Support (October 2021 - December 2023)</h4>
+                <ul>
+                    <li>Coordinated projects to enhance card payment processing.</li>
+                    <li>Analyzed performance data for ATM, Cards, and POS channels.</li>
+                    <li>Ensured 99.9% availability and optimal performance of the card transaction switch (Postilion).</li>
+                </ul>
+                <h4>IT Service Delivery Analyst (November 2019 - September 2021)</h4>
+                <ul>
+                    <li>Managed incident and problem management processes, ensuring timely resolution and root cause analysis.</li>
+                    <li>Implemented and monitored IT service management standards, following the ITIL framework and ISO 20000 certification.</li>
+                </ul>
+            </article>
+
+            <figure>
+                <audio controls>
+                    <source src="https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <figcaption>A short audio clip to sharpen your focus as you peruse this website.</figcaption>
+            </figure>
+            
+        </section>
+
+        <section id="resume">
+            <h2>Resume</h2>
+            <p>This section provides a summary of my education and professional certifications.</p>
+            
+            <h3>Education</h3>
+            <table border="1" aria-label="Education History">
+                <thead>
+                    <tr>
+                        <th>Program/Degree</th>
+                        <th>Institution</th>
+                        <th>Dates</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bachelor of Engineering (B.Eng.) in Mechanical Engineering</td>
+                        <td>Federal University of Technology, Akure (FUTA)</td>
+                        <td>October 2011 - August 2016</td>
+                    </tr>
+                    <tr>
+                        <td>Backend Engineering Course (One-Year Diploma Program)</td>
+                        <td>Altschool Africa</td>
+                        <td>September 2023 - August 2024</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Professional Certifications</h3>
+            <ul>
+                <li>KCNA: Kubernetes and Cloud Native Associate, The Linux Foundation (2025)</li>
+                <li>ISO 22301 BCMS Lead Implementer, PECB (2025)</li>
+                <li>ISO/IEC 20000 Lead Implementer, PECB (2022)</li>
+                <li>Associateship of the Chartered Institute of Bankers (ACIB) (2019)</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Please use the form below to get in touch with me.</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <br>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Golden-Joe Osegbe. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

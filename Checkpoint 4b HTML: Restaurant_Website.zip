@@ -1,1 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Away from Home</title>
+</head>
+<body>
+
+<!--This is the name of the restaurant-->
+    <h1>Home Away from Home</h1>
+
+    <section>
+        <!--this is the appetizers section-->
+        <h2>Appetizers</h2>
+        <ul>
+            <li>
+                <h3>Suya Skewers</h3>
+                <!--images of 600px by 600px were attached to make the dishes visually appealing-->
+                <img src="./suya_skewer.jpg" alt="image of Suya Skewers" width="600" height="600">
+                <p>Tender pieces of marinated beef, grilled to perfection and seasoned with a spicy peanut blend.</p>
+                
+            </li>
+            <li>
+                <h3>Puff Puff</h3>
+                <!--images of 600px by 600px were attached to make the dishes visually appealing-->
+                <img src="./Puff Puff.jpg" alt="image of Puff Puff" width="600" height="600">
+                <p>Light and airy fried dough balls, a sweet and savory delight perfect for starting your meal.</p>
+                
+            </li>
+            <li>
+                <h3>Chin Chin</h3>
+                <!--images of 600px by 600px were attached to make the dishes visually appealing-->
+                <img src="./chin chin.jpg" alt="image of a bowl of chin chin" width="600" height="600">
+                <p>Crispy, crunchy, and slightly sweet baked or fried dough snacks, a popular Nigerian favorite.</p>
+                
+            </li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <section>
+        <!--here is the section for the main course meals-->
+        <h2>Main Courses</h2>
+        <ul>
+            <li>
+                <h3>Jollof Rice with Chicken</h3>
+                <!--images of 600px by 600px were attached to make the dishes visually appealing-->
+                <img src="./Jollof Rice and Chicken.png" alt="image of a plate of jollof rice and chicken" width="600" height="600">
+                <p>The iconic Nigerian Jollof rice, cooked with rich tomato and pepper base, served with succulent grilled chicken.</p>
+                
+            </li>
+            <li>
+                <h3>Pounded Yam with Egusi Soup</h3>
+                <!--images of 600px by 600px were attached to make the dishes visually appealing-->
+                <img src="./Pounded Yam with Egusi Soup.jpg" alt="image of Pounded Yam with Egusi Soup" width="600" height="600">
+                <p>Smooth, pounded yam served with a hearty and flavorful Egusi soup made from ground melon seeds, vegetables, and assorted meats.</p>
+                
+            </li>
+            <li>
+                <h3>Seafood Fried rice</h3>
+                <!--images of 600px by 600px were attached to make the dishes visually appealing-->
+                <img src="./Seafood fried rice.jpg" alt="image of seafood fried rice" width="600" height="600">
+                <p>Fragrant fried rice stir-fried with mixed vegetables and spices, well garnished with your favourite seafood.</p>
+                
+            </li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <section>
+        <!--adding the desserts section-->
+        <h2>Desserts</h2>
+        <ul>
+            <li>
+                <h3>Fruit Salad</h3>
+                <!--images of 600px by 600px were attached to make the dishes visually appealing-->
+                <img src="./Fruit Salad.jpg" alt="image of fruit mix" width="600" height="600">
+                <p>A refreshing mix of seasonal Nigerian fruits.</p>
+                
+            </li>
+            <li>
+                <h3>Moin Moin</h3>
+                <!--images of 600px by 600px were attached to make the dishes visually appealing-->
+                <img src="./Moin Moin.jpg" alt="image of moi moi" width="600" height="600">
+                <p>Steamed bean pudding, made from blended black-eyed peas, onions, and spices, often with added fish or meat.</p>
+                
+            </li>
+            <li>
+                <h3>Plantain Chips</h3>
+                <!--images of 600px by 600px were attached to make the dishes visually appealing-->
+                <img src="./Plantain Chips.jpg" alt="image of a bowl of plantain chips" width="600" height="600">
+                <p>Thinly sliced plantains, fried until golden brown and crispy, a perfect sweet and savory snack.</p>
+                
+            </li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <footer>
+        <!--this is thef footer of the web page-->
+        <p>Ready to place an order or have questions? <a href="contact.html">Contact Us</a></p>
+    </footer>
+
+</body>
+</html>
 

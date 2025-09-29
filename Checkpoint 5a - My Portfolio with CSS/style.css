@@ -1,0 +1,286 @@
+/* Reset default margins and padding for consistency across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and borders are included in element dimensions */
+}
+
+/* General body styling with a professional dark theme */
+body {
+    background-color: #f4f4f9; /* Light neutral background for contrast */
+    color: #333333; /* Dark charcoal for text readability */
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; /* Modern, clean font stack */
+    line-height: 1.6; /* Improved readability */
+    font-size: 16px; /* Base font size */
+}
+
+/* Header styling with a dark, elegant background */
+header {
+    background-color: #2a2a2e; /* Dark charcoal background */
+    border-radius: 0 0 15px 15px; /* Rounded bottom corners for a modern touch */
+    color: #e0e0e0; /* Light text for contrast */
+    padding: 20px 40px; /* Spacious padding */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Styling for the name in the header(i.e my name) */
+.name {
+    font-family: 'Merriweather', serif; /* Elegant serif font for headings */
+    font-size: 40px; /* Larger font size for prominence */
+    font-weight: 700; /* Bold for emphasis */
+    padding: 20px 0 10px; /* Adjusted padding */
+    text-align: center; /* Centered for balance */
+}
+
+/* Heading container for intro and nav */
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; /* Ensure text alignment is consistent */
+}
+
+/* Navigation styling */
+.navbars {
+    margin-top: 20px; /* Space above nav */
+}
+
+.navbars svg {
+    width: 20px; /* Slightly smaller icons for balance */
+    height: 20px;
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center; /* Center navigation links */
+    gap: 30px; /* gap for better spacing between the navigation bars */
+    list-style: none; /* Remove default list bullets */
+}
+
+.nav-list a {
+    display: flex;
+    align-items: center;
+    color: #e0e0e0; /* Light text for contrast */
+    text-decoration: none; /* remove that default hyperling underline */
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+}
+
+.nav-list a:hover {
+    color: #d4a373; /* Warm color on hover */
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+/* Main section headings */
+h2 {
+    color: #2a2a2e; /* Dark charcoal for consistency */
+    border-bottom: 2px solid #d4a373; /* Warm accent border */
+    padding-bottom: 10px;
+    margin: 40px 0 20px;
+    font-family: 'Merriweather', serif; /* Consistent heading font */
+    font-size: 1.8rem;
+}
+
+/* Key skills section */
+.key-skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    list-style: none;
+    padding: 0 20px;
+}
+
+.key-skills li {
+    background-color: #ffffff; /* White card background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover */
+}
+
+.key-skills li:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+}
+
+.key-skills svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.key-skills p {
+    margin-top: 10px; /* Space below strong text */
+    color: #555555; /* Slightly lighter text for readability */
+}
+
+/* Work experience job title styling */
+.job-title {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 150px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+article h3,
+article h4 {
+    color: #2a2a2e; /* Dark charcoal for headings */
+    font-family: 'Merriweather', serif;
+}
+
+article h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+article h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+article ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* Table styling for education */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0 40px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff; /* White background for table */
+}
+
+thead tr {
+    background-color: #2a2a2e; /* Dark header background */
+    color: #e0e0e0; /* Light text */
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f8f8; /* Subtle alternating row color */
+}
+
+tbody td:first-child {
+    font-weight: 600;
+    color: #d4a373; /* Warm accent for first column */
+}
+
+/* Professional certifications list */
+#resume ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+#resume ul li {
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+/* Contact form styling */
+#contact form {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for simplicity */
+    gap: 20px;
+    max-width: 600px; /* Constrain form width */
+    margin: 0 auto; /* Center form */
+    padding: 0 20px;
+}
+
+#contact label {
+    font-weight: 600;
+    color: #2a2a2e;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    border-color: #d4a373; /* Warm accent on focus */
+    box-shadow: 0 0 5px rgba(212, 163, 115, 0.3); /* Subtle glow */
+    outline: none;
+}
+
+#contact textarea {
+    resize: vertical;
+    min-height: 120px; /* Minimum height for textarea */
+}
+
+#contact button[type="submit"] {
+    background-color: #d4a373; /* Warm accent button */
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#contact button[type="submit"]:hover {
+    background-color: #b5895a; /* Darker accent on hover */
+    transform: translateY(-2px); /* Subtle lift */
+}
+
+/* Footer styling */
+footer {
+    background-color: #2a2a2e;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 2px solid #d4a373; /* Accent border */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .name {
+        font-size: 2rem;
+    }
+
+    .nav-list {
+        flex-direction: column; /* Stack nav items vertically */
+        gap: 15px;
+    }
+
+    .key-skills {
+        grid-template-columns: 1fr; /* Single column on mobile */
+    }
+
+    .job-title {
+        flex-direction: column; /* Stack job title and dates */
+        align-items: flex-start;
+    }
+}
+
+/* High-resolution displays */
+@media (min-resolution: 2dppx) {
+    body {
+        font-size: 18px; /* Slightly larger text for clarity */
+    }
+}

@@ -1,0 +1,478 @@
+/* Reset default margins, padding, and set box-sizing */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Base body styles: white background, dark text, fallback fonts */
+body {
+    background-color: white;
+    color: rgb(51, 51, 51);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* Header: flex layout for logo and nav */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Align images vertically */
+img {
+    vertical-align: middle;
+}
+
+/* Header logo size */
+header img {
+    width: 268px;
+    height: 33px;
+}
+
+/* Remove default link underlines in header */
+header a {
+    text-decoration: none;
+}
+
+/* Navbar: flex layout with spacing */
+.navbar {
+    display: flex;
+    gap: 15px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* About link: default teal color */
+#About {
+    color: rgb(0, 179, 155);
+}
+
+/* Careers/Departments links: default gray */
+#Careers, #Departments {
+    color: rgb(171, 171, 171);
+}
+
+/* Hover effect for Careers/Departments: teal color */
+#Careers:hover, #Departments:hover {
+    cursor: pointer;
+    color: rgb(0, 179, 155);
+}
+
+/* Section 1: Hero with centered logo and mission text */
+.section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+/* Small logo in hero section */
+#small-logo {
+    width: 40px;
+    height: 40px;
+}
+
+/* Mission headline: teal, large, light weight */
+.mission {
+    color: rgb(0, 179, 155);
+    font-size: 33px;
+    font-weight: 300;
+    padding-top: 20px;
+}
+
+/* Mission statements: flex layout with gray text */
+.mission-statements {
+    display: flex;
+    font-size: 16px;
+    color: rgb(116, 116, 116);
+    justify-content: space-between;
+    padding-left: 260px;
+    padding-right: 280px;
+    gap: 25px;
+    padding-top: 30px;
+}
+
+/* First mission paragraph width */
+.mission-statements p:first-child {
+    width: 200px;
+}
+
+/* Second mission paragraph width */
+.mission-statements p:nth-child(2) {
+    width: 210px;
+}
+
+/* Section 2: Target market cards (Patients, Doctors, Clinics) */
+.section2 {
+    display: flex;
+    max-width: 1015px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 25px;
+    font-family: "Work Sans", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Patients card: teal background, rounded */
+.target-market1 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 204, 177);
+    border-radius: 10px;
+    justify-content: space-between;
+    height: 345px;
+    padding: 42px 42px 0 42px;
+    font-family: "Work Sans", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* Doctors card: blue background, rounded */
+.target-market2 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(61, 131, 223);
+    border-radius: 10px;
+    justify-content: space-between;
+    height: 345px;
+    padding: 42px 42px 0 42px;
+    font-family: "Work Sans", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* Clinics card: dark background, rounded */
+.target-market3 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(27, 39, 52);
+    border-radius: 10px;
+    justify-content: space-between;
+    height: 345px;
+    padding: 42px 42px 0 42px;
+    font-family: "Work Sans", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* Card icons size */
+.section2 img {
+    width: 25px;
+    height: 25px;
+}
+
+/* Card titles: large, light weight */
+.target-market-title {
+    font-size: 34px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Country selectors: styled as links */
+.select1 select, .select2 select, .select3 select {
+    margin-bottom: 30px;
+    text-decoration: underline;
+    border: none;
+    color: white;
+    font-family: "Work Sans", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* Patients selector background */
+.select1 select {
+    background-color: rgb(0, 204, 177);
+}
+
+/* Doctors selector background */
+.select2 select {
+    background-color: rgb(61, 131, 223);
+}
+
+/* Clinics selector background */
+.select3 select {
+    background-color: rgb(27, 39, 52);
+}
+
+/* Section 3: Global presence with text and logos */
+.section3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Global text: teal, large */
+.section3-text {
+    font-family: "Work Sans", Arial, sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    color: rgb(0, 179, 155);
+    width: 30%;
+    padding-bottom: 100px;
+}
+
+/* Partner logos: flex layout with wrapping */
+.section3-logos {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 30%;
+}
+
+/* Logo images: sized to fit */
+.section3-logos img {
+    width: 75px;
+    object-fit: contain;
+}
+
+/* Section 4: Stats section with teal background */
+.section4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(208, 250, 244);
+    margin-top: 55px;
+    padding-left: 50px;
+}
+
+/* Stats text container */
+.hero-text {
+    font-family: "Work Sans", Arial, sans-serif;
+    padding-top: 60px;
+}
+
+/* Stats headline: teal, large */
+.hero-text h2 {
+    color: rgb(0, 179, 155);
+    font-size: 30px;
+    font-weight: 300;
+    padding-left: 50px;
+    letter-spacing: -0.3px;
+}
+
+/* Stats description: gray */
+.hero-text p {
+    color: rgb(116, 116, 116);
+    font-size: 15px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+/* Stats cards container */
+.hero-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 50px;
+    margin-left: 100px;
+    height: 100%;
+}
+
+/* First column of stats cards */
+.hero-cards-column1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+/* Stats cards: centered, white background */
+.hero-cards-leader, .hero-cards-patients, .hero-cards-visits, .hero-cards-doctors {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 220px;
+    border-radius: 2px;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+/* Stats card icons */
+.hero-cards img {
+    width: 25px;
+    height: auto;
+}
+
+/* Stats and Section 5 headlines: teal, large */
+.hero-cards h3, .section5 h3 {
+    font-family: "Work Sans", Arial, sans-serif;
+    font-size: 30px;
+    color: rgb(0, 179, 155);
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Stats card text: small, gray */
+.hero-cards p {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 12px;
+    color: rgb(116, 116, 116);
+    margin-bottom: 10px;
+}
+
+/* Section 5: Career pitch, centered */
+.section5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 70px;
+}
+
+/* Career pitch text: gray, centered */
+.section5 p {
+    font-family: "Roboto", Arial, sans-serif;
+    text-align: center;
+    font-weight: 400;
+    color: rgb(116, 116, 116);
+    margin-top: 22px;
+    margin-bottom: 22px;
+    line-height: 1.7;
+}
+
+/* Section 6: City cards grid */
+.section6 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Cities container: centered with padding */
+.section6 .cities {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+/* City card spacing */
+.section6 div {
+    margin: 5px;
+}
+
+/* City names: gray */
+.section6 p {
+    font-family: "Roboto", Arial, sans-serif;
+    color: rgb(116, 116, 116);
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+/* City card layout: flex for text and button */
+.openings div {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* City buttons: blue, bold */
+.openings button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 76px;
+    background-color: rgb(61, 131, 223);
+    line-height: 10px;
+    color: white;
+    font-weight: 800;
+    font-size: 10px;
+    text-align: center;
+    border-radius: 4px;
+    font-family: "Roboto", Arial, sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 20px;
+}
+
+/* City card hover: shadow effect */
+.openings:hover {
+    cursor: pointer;
+    box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Section 7: Final CTA, centered */
+.section7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* CTA headline: dark, large */
+.section7 h1 {
+    font-family: "Work Sans", Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    font-size: 30px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 22.5px;
+}
+
+/* CTA button: blue, bold */
+.section7 button {
+    background-color: rgb(61, 131, 223);
+    color: white;
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 12px;
+    padding: 12px 14px;
+    margin-left: 120px;
+    border-radius: 4px;
+}
+
+/* CTA button hover: pointer cursor */
+.section7 button:hover {
+    cursor: pointer;
+}
+
+/* Footer: centered, small text */
+footer {
+    text-align: center;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 12px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 100px;
+}
+
+/* Footer second paragraph: extra padding */
+footer div p:nth-of-type(2) {
+    padding-top: 20px;
+}
+
+/* Footer links: blue */
+footer div a {
+    color: rgb(51, 122, 183);
+    text-decoration: none;
+}
+
+/* Footer links hover: underline */
+footer div a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}

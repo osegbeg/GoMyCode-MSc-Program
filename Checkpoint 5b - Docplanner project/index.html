@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Define character encoding for proper text rendering -->
+    <meta charset="UTF-8">
+    <!-- Ensure responsive viewport scaling for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title reflecting Docplanner's branding -->
+    <title>Docplanner Project</title>
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Preconnect to Google Fonts for faster font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Import Roboto font with multiple weights for styling flexibility -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     <!-- Import work sans font with multiple weights for styling flexibility -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <!-- Preconnect to Google Fonts for faster font loading -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header section with logo and navigation -->
+    <header>
+        <!-- Logo linking to homepage -->
+        <a href="./index.html">
+            <img name="gotohome" src="./images/FullLogo.png" alt="Docplanner Logo">
+        </a>
+        <!-- Navigation bar with links -->
+        <div class="navbar">
+            <!-- About link, styled green by default -->
+            <a id="About" href="./index.html">About us</a>
+            <!-- Careers link, turns green on hover -->
+            <a id="Careers" href="#">Careers</a>
+            <!-- Departments link, turns green on hover -->
+            <a id="Departments" href="#">Departments</a>
+        </div>
+    </header>
+
+    <!-- Section 1: Hero section with mission statement -->
+    <section class="section1">
+        <!-- Small logo for visual emphasis -->
+        <img id="small-logo" src="images/logo.png" alt="Docplanner Small Logo">
+        <!-- Main mission headline -->
+        <p class="mission">Making the healthcare experience more human</p>
+        <!-- Container for mission statement paragraphs -->
+        <div class="mission-statements">
+            <!-- Patient-focused mission statement -->
+            <p>We want patients to find the perfect doctor and book an appointment in the most easy way. The patient journey should be enjoyable, and that's why we are always next to them: to help them find the best possible care. Anytime, anywhere.</p>
+            <!-- Doctor-focused mission statement -->
+            <p>We also help doctors to better manage their practice and build their online reputation. With our integrated end-to-end solution, doctors are able not only to improve their online presence, but also to devote their time to what really matters: their patients.</p>
+        </div>
+    </section>
+
+    <!-- Section 2: Target audience cards (Patients, Doctors, Clinics) -->
+    <section class="section2">
+        <!-- Card for Patients -->
+        <div class="target-market1">
+            <img src="images/icon-patients.svg" alt="Patients Icon">
+            <p class="target-market-title">For Patients</p>
+            <p>Find a doctor, book a visit and solve any health-related doubt</p>
+            <!-- Country selector for patients -->
+            <div class="select1">
+                <select id="country" name="choose country">
+                    <option value="" disabled selected>Choose Country</option>
+                    <option value="#">Argentina</option>
+                    <option value="#">Brazil</option>
+                    <option value="#">Chile</option>
+                    <option value="#">Colombia</option>
+                    <option value="#">Czech</option>
+                    <option value="#">Germany</option>
+                    <option value="#">Poland</option>
+                    <option value="#">Portugal</option>
+                    <option value="#">Peru</option>
+                    <option value="#">Italy</option>
+                    <option value="#">Spain</option>
+                    <option value="#">Turkey</option>
+                    <option value="#">Mexico</option>
+                </select>
+            </div>
+        </div>
+        <!-- Card for Doctors -->
+        <div class="target-market2">
+            <img src="images/icon-doctors.svg" alt="Doctors Icon">
+            <p class="target-market-title">For doctors</p>
+            <p>Save time managing visits and cut no-shows by half</p>
+            <!-- Country selector for doctors -->
+            <div class="select2">
+                <select id="country" name="choose country">
+                    <option value="" disabled selected>Choose Country</option>
+                    <option value="#">Argentina</option>
+                    <option value="#">Brazil</option>
+                    <option value="#">Chile</option>
+                    <option value="#">Colombia</option>
+                    <option value="#">Czech</option>
+                    <option value="#">Germany</option>
+                    <option value="#">Poland</option>
+                    <option value="#">Portugal</option>
+                    <option value="#">Peru</option>
+                    <option value="#">Italy</option>
+                    <option value="#">Spain</option>
+                    <option value="#">Turkey</option>
+                    <option value="#">Mexico</option>
+                </select>
+            </div>
+        </div>
+        <!-- Card for Clinics -->
+        <div class="target-market3">
+            <div>
+                <img src="images/icon-clinics.svg" alt="Clinics Icon">
+                <p class="target-market-title">For Clinics</p>
+                <p>Deliver an exceptional patient experience in your clinic</p>
+            </div>
+            <!-- Country selectors for clinics (small and large) -->
+            <div class="select3">
+                <select id="country" name="choose country">
+                    <option value="" disabled selected>2 to 20 Specialists</option>
+                    <option value="#">Argentina</option>
+                    <option value="#">Brazil</option>
+                    <option value="#">Chile</option>
+                    <option value="#">Colombia</option>
+                    <option value="#">Czech</option>
+                    <option value="#">Germany</option>
+                    <option value="#">Poland</option>
+                    <option value="#">Portugal</option>
+                    <option value="#">Peru</option>
+                    <option value="#">Italy</option>
+                    <option value="#">Spain</option>
+                    <option value="#">Turkey</option>
+                    <option value="#">Mexico</option>
+                </select>
+                <select id="country" name="choose country">
+                    <option value="" disabled selected>More than 20 Specialists</option>
+                    <option value="#">Argentina</option>
+                    <option value="#">Brazil</option>
+                    <option value="#">Chile</option>
+                    <option value="#">Colombia</option>
+                    <option value="#">Czech</option>
+                    <option value="#">Germany</option>
+                    <option value="#">Poland</option>
+                    <option value="#">Portugal</option>
+                    <option value="#">Peru</option>
+                    <option value="#">Italy</option>
+                    <option value="#">Spain</option>
+                    <option value="#">Turkey</option>
+                    <option value="#">Mexico</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Global presence with partner logos -->
+    <section class="section3">
+        <!-- Text highlighting global reach -->
+        <div class="section3-text">
+            <p>
+                We are a global
+                <br>
+                Company
+                <br>
+                with local culture
+            </p>
+        </div>
+        <!-- Container for partner brand logos -->
+        <div class="section3-logos">
+            <img src="images/znanylekarz.png" alt="ZnanyLekarz Logo">
+            <img src="images/Doctoralia.png" alt="Doctoralia Logo">
+            <img src="images/MioDottore.png" alt="MioDottore Logo">
+            <img src="images/doktortakvimi.png" alt="DoktorTakvimi Logo">
+            <img src="images/Znamylekar.jpg" alt="ZnamyLekar Logo">
+            <img src="images/logo-jameda.svg" alt="Jameda Logo">
+            <img src="images/logo-tuotempo.svg" alt="TuoTempo Logo">
+            <img src="images/logo-gipo-primary.svg" alt="Gipo Logo">
+            <img src="images/logo-clinicloud.svg" alt="CliniCloud Logo">
+            <img src="images/logo-feegow.svg" alt="Feegow Logo">
+        </div>
+    </section>
+
+    <!-- Section 4: Statistics showcasing platform scale -->
+    <section class="section4">
+        <!-- Hero text for stats section -->
+        <div class="hero-text">
+            <h2>
+                The world's biggest 
+                <br>
+                healthcare platform
+            </h2>
+            <p>
+                We work from 9 offices all over the world, bringing Docplanner 
+                <br>
+                Group to life in 13 countries.
+            </p>
+            <!-- Background logo for visual effect -->
+            <img src="images/logocropped.png" alt="Background Docplanner Logo">
+        </div>
+        <!-- Stats cards organized in two columns -->
+        <div class="hero-cards">
+            <div class="hero-cards-column1">
+                <!-- Card for countries -->
+                <div class="hero-cards-leader">
+                    <img src="images/flag.png" alt="Flag Icon">
+                    <h3>Leader in 13 countries</h3>
+                    <p>Poland, Brazil, Mexico, Spain, Italy, Germany, Turkey, Colombia, Czech Republic, Portugal, Argentina, Peru and Chile</p>
+                </div>
+                <!-- Card for patient stats -->
+                <div class="hero-cards-patients">
+                    <img src="images/patients.png" alt="Patients Icon">
+                    <h3>
+                        90,000,000 
+                        <br>
+                        patients
+                    </h3>
+                    <p>visit our websites each month</p>
+                </div>
+            </div>
+            <div class="hero-cards-column2">
+                <!-- Card for appointment stats -->
+                <div class="hero-cards-visits">
+                    <img src="images/visits.png" alt="Visits Icon">
+                    <h3>15,000,000 appointments</h3>
+                    <p>visit our websites each month</p>
+                </div>
+                <!-- Card for doctor stats -->
+                <div class="hero-cards-doctors">
+                    <img src="images/doctors.png" alt="Doctors Icon">
+                    <h3>210,000 active doctors</h3>
+                    <p>trust our solutions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Career pitch -->
+    <section class="section5">
+        <div>
+            <!-- Headline for career section -->
+            <h3>Improve the lives of millions. 
+                <br>
+                Change yours forever.
+            </h3>
+            <!-- Description of team and global offices -->
+            <p>More than 2800 team mates share our same vision, goals and passion. 
+                <br>
+                With offices in Warsaw, Barcelona, Munich, Istanbul, Rome, Rio, Bologna, 
+                <br>
+                Mexico City and Curitiba, our search for great talent never stops.
+            </p>
+        </div>
+    </section>
+
+    <!-- Section 6: City-specific career openings -->
+    <section class="section6">
+        <!-- Container for city cards -->
+        <div class="cities">
+            <!-- City card: Warsaw -->
+            <div class="openings">
+                <img src="images/warsaw.png" alt="Warsaw City">
+                <div>
+                    <p>Warsaw</p>
+                    <button type="button"><b>SEE OPENINGS</b></button>
+                </div>
+            </div>
+            <!-- City card: Barcelona -->
+            <div class="openings">
+                <img src="images/barcelona.png" alt="Barcelona City">
+                <div>
+                    <p>Barcelona</p>
+                    <button type="button"><b>SEE OPENINGS</b></button>
+                </div>
+            </div>
+            <!-- City card: Munich -->
+            <div class="openings">
+                <img src="images/munich.png" alt="Munich City">
+                <div>
+                    <p>Munich</p>
+                    <button type="button"><b>SEE OPENINGS</b></button>
+                </div>
+            </div>
+            <!-- City card: Istanbul -->
+            <div class="openings">
+                <img src="images/istanbul.png" alt="Istanbul City">
+                <div>
+                    <p>Istanbul</p>
+                    <button type="button"><b>SEE OPENINGS</b></button>
+                </div>
+            </div>
+            <!-- City card: Rome -->
+            <div class="openings">
+                <img src="images/rome.png" alt="Rome City">
+                <div>
+                    <p>Rome</p>
+                    <button type="button"><b>SEE OPENINGS</b></button>
+                </div>
+            </div>
+            <!-- City card: Bologna -->
+            <div class="openings">
+                <img src="images/bologna.png" alt="Bologna City">
+                <div>
+                    <p>Bologna</p>
+                    <button type="button"><b>SEE OPENINGS</b></button>
+                </div>
+            </div>
+            <!-- City card: Curitiba -->
+            <div class="openings">
+                <img src="images/curitiba.png" alt="Curitiba City">
+                <div>
+                    <p>Curitiba</p>
+                    <button type="button"><b>SEE OPENINGS</b></button>
+                </div>
+            </div>
+            <!-- City card: Rio de Janeiro -->
+            <div class="openings">
+                <img src="images/rio-janeiro.png" alt="Rio de Janeiro City">
+                <div>
+                    <p>Rio De Janeiro</p>
+                    <button type="button"><b>SEE OPENINGS</b></button>
+                </div>
+            </div>
+            <!-- City card: Mexico City -->
+            <div class="openings">
+                <img src="images/mexico-city.png" alt="Mexico City">
+                <div>
+                    <p>Mexico City</p>
+                    <button type="button"><b>SEE OPENINGS</b></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Final call-to-action for careers -->
+    <section class="section7">
+        <div>
+            <!-- CTA headline -->
+            <h1>Sounds interesting? Join us now!</h1>
+            <!-- CTA button for job openings -->
+            <button>SEE ALL CURRENT OPENINGS</button>
+        </div>
+    </section>
+
+    <!-- Footer with company info and links -->
+    <footer>
+        <div>
+            <!-- List of countries where Docplanner operates -->
+            <p>We are leaders in 13 countries:</p>
+            <a href="#">Argentina</a>
+            <a href="#">Brazil</a>
+            <a href="#">Chile</a>
+            <a href="#">Colombia</a>
+            <a href="#">Czech</a>
+            <a href="#">Germany</a>
+            <a href="#">Poland</a>
+            <a href="#">Portugal</a>
+            <a href="#">Italy</a>
+            <a href="#">Spain</a>
+            <a href="#">Turkey</a>
+            <a href="#">Mexico</a>
+            <a href="#">Peru</a>
+            <!-- Privacy policy notice -->
+            <p>This site uses cookies to deliver services in accordance with this Privacy Policy. You can specify the conditions for storing or accessing cookies on your browser.</p>
+            <!-- Copyright notice -->
+            <p>www.docplanner.com &copy; 2023</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,74 @@
+
+/* styles for the hero section */
+.hero-section{
+    background-image: url(https://templatemo.com/templates/templatemo_580_woox_travel/assets/images/banner-03.jpg);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    margin-bottom: 50px ;
+}
+
+/* styling for the icons */
+svg{
+    height: 60px;
+    width: auto;
+    border: 2px solid green;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+h4{
+    color: green;
+    font-size: small;
+}
+h3{
+    color: gray;
+    font-size: medium;    
+}
+
+.col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* custom styling for the hero section and call to action */
+.container{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+h1>span{
+    font-weight: bolder;
+    color: aqua;
+}
+
+/* styling for the cards images */
+.card-img-top{
+    height: 200px;
+    width: auto;
+    aspect-ratio: 1/1;
+}
+
+.tour-package-section, .form-header{
+    margin-top: 100px;
+}
+
+/* style for the footer */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

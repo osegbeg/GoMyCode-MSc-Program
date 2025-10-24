@@ -1,0 +1,225 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Clean, readable font */
+    background-color: #F5F5DC; /* Beige for earthy Nigerian tone */
+    color: #333; /* Dark text for contrast */
+    line-height: 1.6;
+}
+
+header>div {
+    background-image: url(./images/cultural-heritage-of-Benin-2.jpeg);
+    color: #FFFFFF; /* White text */
+    padding: 50px;
+    text-align: center;
+    height: 60vh;
+}
+
+nav {
+    display: flex;
+    background-color: green;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+nav img {
+    width: 100px; 
+    height: auto;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: #FFD700; /* Gold hover effect */
+    text-decoration: underline;
+}
+
+header div h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header div h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+audio {
+    width: 100%;
+    max-width: 300px;
+}
+
+.history{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding-top: 25px;
+}
+
+.history-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:1px solid rgb(0, 128, 0);
+    border-radius: 10px;
+    gap: 10px;
+    flex: 30%;
+    height: 500px;
+    width: 30%;
+    position: relative;
+}
+.history-cards:hover{
+    cursor: pointer;
+    box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Section styling */
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #FFFFFF; /* White background for sections */
+    border: 2px solid rgb(0, 128, 0); /* Green border */
+    border-radius: 10px;
+}
+
+section h4 {
+    color: #008000; /* Green heading */
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+section h5 {
+    color: rgb(139, 69, 19);
+    font-size: 1.4em;
+    margin: 15px 0;
+}
+
+.facts, .future{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+section p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+section ul ul {
+    margin-left: 30px;
+}
+
+section div img {
+    width: 100%;
+    max-width: 300px; /* Control image size */
+    height: auto;
+    border-radius: 10px; /* Soft rounding */
+    margin: 10px;
+}
+
+section div img:hover {
+    border: 3px solid #FFD700; /* Gold border on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Footer styling */
+footer {
+    background-color: rgb(139, 69, 19); /* Brown for earthy tone */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer h6 {
+    font-size: 1.2em;
+}
+
+footer p {
+    font-size: 0.75em;
+}
+
+/* Responsive design */
+@media (max-width: 768px) { /* Tablet and below */
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section div img {
+        max-width: 200px; /* Smaller images on mobile */
+    }
+
+    header div h2 {
+        font-size: 2em;
+    }
+
+    header div h3 {
+        font-size: 1.2em;
+    }
+    .facts, .future {
+        flex-direction: column; /* Stack fact/future items */
+        gap: 15px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) { /* Mobile */
+    nav img {
+        width: 80px;
+    }
+
+    section h4 {
+        font-size: 1.5em;
+    }
+
+    section h5 {
+        font-size: 1.2em;
+    }
+
+    section div img {
+        max-width: 150px;
+    }
+
+    audio {
+        max-width: 200px;
+    }
+    .facts, .future {
+        flex-direction: column; /* Stack fact/future items */
+        gap: 15px;
+        align-items: center;
+    }
+}

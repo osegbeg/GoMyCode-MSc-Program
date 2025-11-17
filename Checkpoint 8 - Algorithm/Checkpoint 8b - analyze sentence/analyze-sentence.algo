@@ -1,0 +1,31 @@
+ALGORITHM analyze_sentence
+VAR
+    ch          : CHARACTER;
+    length      : INTEGER := 0;
+    word_count  : INTEGER := 1;     // 
+    vowel_count : INTEGER := 0;
+    is_space    : BOOLEAN;
+BEGIN
+    Write("Enter sentence ending with . : ");
+    
+    Read(ch);                       // read first character
+    
+    WHILE ch <> '.' DO
+        // 1. Count every character (except the final .)
+        length := length + 1;
+        
+        // 2. Count vowels (both cases)
+        IF (ch = 'a') OR (ch = 'e') OR (ch = 'i') OR 
+           (ch = 'o') OR (ch = 'u') OR
+           (ch = 'A') OR (ch = 'E') OR (ch = 'I') OR 
+           (ch = 'O') OR (ch = 'U') THAN
+            vowel_count := vowel_count + 1;
+        END_IF;
+        
+        // 3. Count words: every space means a new word is coming
+        IF ch = ' ' THAN
+            word_count := word_count + 1;
+        END_IF;
+        
+        Read(ch);                   // read next character
+    END_WHILE;

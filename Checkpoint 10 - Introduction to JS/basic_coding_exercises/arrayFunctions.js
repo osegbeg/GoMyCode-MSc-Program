@@ -73,3 +73,31 @@ function calculateSum(arr){
 //test
 console.log(calculateSum([0, -1, 9, 65, 'hello', -43]))
 
+
+//filters out elements from an array
+//the condition of choice is to filter out all positive integers
+function filterArray(arr) {
+  // Check if arr is really an array
+  if (!Array.isArray(arr)) {
+    return 'Please enter an array of numbers';
+  }
+  // Handle empty array
+  if (arr.length === 0) {
+    return 'The array is empty. Therefore nothing to add';
+  }
+
+  let newArray = [];
+  for (let i = 0; i < arr.length; i++) {
+    // Handle an array if there are strings
+    if (typeof arr[i] == 'string') {
+      continue;
+    }
+    if (arr[i] > 0) {
+      newArray.push(arr[i])
+    }
+  }
+
+  return newArray;
+}
+//test
+console.log(filterArray([1,2,3,'b',4, -1, -10, '43', -2, 19]))

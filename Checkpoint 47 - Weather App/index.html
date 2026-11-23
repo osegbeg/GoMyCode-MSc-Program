@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-container">
+    <header class="app-header">
+      <h1>Weather Forecast</h1>
+      <p class="subtitle">Search any city worldwide for live conditions</p>
+    </header>
+
+    <form id="search-form" class="search-box">
+      <input
+        type="text"
+        id="city-input"
+        placeholder="Enter city name (e.g., Lagos, London, Tunis)..."
+        autocomplete="off"
+        required
+      />
+      <button type="submit" id="search-btn">Search</button>
+    </form>
+
+    <div id="status-message" class="status-message" role="alert"></div>
+
+    <section id="weather-card" class="weather-card hidden" aria-live="polite">
+      <div class="location-header">
+        <h2 id="city-name">--</h2>
+        <span id="country-name" class="badge">--</span>
+      </div>
+
+      <div class="temp-display">
+        <span id="weather-icon" class="weather-icon">☀️</span>
+        <div>
+          <p id="temperature" class="temperature">--°C</p>
+          <p id="weather-description" class="description">--</p>
+        </div>
+      </div>
+
+      <div class="details-grid">
+        <div class="detail-item">
+          <span class="detail-label">Feels Like</span>
+          <span id="feels-like" class="detail-value">--°C</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Humidity</span>
+          <span id="humidity" class="detail-value">--%</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Wind Speed</span>
+          <span id="wind-speed" class="detail-value">-- km/h</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

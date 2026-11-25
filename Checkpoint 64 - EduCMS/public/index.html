@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduCMS — Educational Content Management System</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 900px; margin: 32px auto; padding: 0 16px; background: #f8fafc; color: #0f172a; }
+    header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+    .card { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; margin-bottom: 14px; }
+    form { display: grid; gap: 10px; margin-bottom: 24px; }
+    input, textarea, select, button { padding: 10px; border-radius: 6px; border: 1px solid #cbd5e1; font-size: 14px; }
+    button { background: #1d4ed8; color: #fff; border: none; cursor: pointer; font-weight: bold; }
+    .meta { font-size: 12px; color: #475569; margin-bottom: 6px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>EduCMS</h1>
+    <span id="healthBadge">Checking API...</span>
+  </header>
+
+  <form id="postForm" class="card">
+    <h3>Create Course / Article Post</h3>
+    <input id="title" placeholder="Post title" required />
+    <select id="status">
+      <option value="published">Published</option>
+      <option value="draft">Draft</option>
+    </select>
+    <textarea id="content" rows="4" placeholder="Write content..." required></textarea>
+    <button type="submit">Save Post</button>
+  </form>
+
+  <div id="postsList"></div>
+
+  <script>
+    async function loadHealth() {
+      const res = await fetch('/api/health');
+      const data = await res.json();
+      document.getElementById('healthBadge').textContent =
+        `API: ${data.status} | DB: ${data.database}`;
+    }
+
+    async function loadPosts() {
+      const res = await fetch('/api/posts');
+      const posts = await res.json();
+      document.getElementById('postsList').innerHTML = posts.map(p => `
+        <article class="card">
+          <div class="meta">Status: ${p.status} · ${p.reading_time || 1} min read</div>
+          <h3>${p.title}</h3>
+          <p>${p.excerpt || p.content}</p>
+        </article>
+      `).join('');
+    }
+
+    document.getElementById('postForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      await fetch('/api/posts', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          title: document.getElementById('title').value,
+          status: document.getElementById('status').value,
+          content: document.getElementById('content').value
+        })
+      });
+      e.target.reset();
+      loadPosts();
+    });
+
+    loadHealth();
+    loadPosts();
+  </script>
+</body>
+</html>

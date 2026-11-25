@@ -1,0 +1,16 @@
+{
+  "name": "task-qa-ci-demo",
+  "version": "1.0.0",
+  "description": "Sample mini-project demonstrating Git workflow, GitHub Actions CI, unit testing, and ESLint QA checks",
+  "main": "src/taskManager.js",
+  "scripts": {
+    "lint": "npx eslint src test",
+    "test": "node --test test/*.test.js",
+    "build": "node -e \"require('./src/taskManager.js'); console.log('Build check passed');\"",
+    "ci": "npm run lint && npm test && npm run build"
+  },
+  "devDependencies": {
+    "eslint": "^9.15.0",
+    "@eslint/js": "^9.15.0"
+  }
+}

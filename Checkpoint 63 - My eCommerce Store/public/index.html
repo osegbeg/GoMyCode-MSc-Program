@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GJ Store — Full E-Commerce App</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <h1>GJ Store</h1>
+      <div class="controls">
+        <input id="searchInput" type="search" placeholder="Search products..." />
+        <select id="categorySelect">
+          <option value="All">All Categories</option>
+          <option value="Electronics">Electronics</option>
+          <option value="Accessories">Accessories</option>
+          <option value="Home">Home</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="container layout">
+    <section>
+      <h2>Products</h2>
+      <div id="productGrid" class="grid"></div>
+    </section>
+
+    <aside class="cart-panel">
+      <h2>Cart (<span id="cartCount">0</span>)</h2>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="cartTotal">$0.00</strong>
+      </div>
+
+      <form id="checkoutForm" class="checkout-form">
+        <h3>Checkout</h3>
+        <input id="customerName" type="text" placeholder="Full Name" required />
+        <input id="customerEmail" type="email" placeholder="Email Address" required />
+        <button type="submit" class="btn primary full">Place Order</button>
+      </form>
+      <div id="orderStatus" class="status-msg"></div>
+    </aside>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

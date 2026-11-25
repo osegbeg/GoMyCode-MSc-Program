@@ -1,0 +1,16 @@
+{
+  "name": "checkpoint-62---redis",
+  "version": "1.0.0",
+  "description": "The **General Transit Feed Specification (GTFS)** is an open data standard for public transit schedules and geographic network information. It consists of:\r * **GTFS Schedule (Static):** A `.zip` feed of `.txt` files:\r   * `agency.txt` — Transit agency details and timezones.\r   * `stops.txt` — Stop IDs, names, and latitude/longitude (`stop_lat`, `stop_lon`).\r   * `routes.txt` — Transit routes and route types.\r   * `trips.txt` — Individual journeys along a route tied to a `service_id` and optional `shape_id`.\r   * `stop_times.txt` — Arrival/departure times and `stop_sequence` per trip (typically the largest file).\r   * `calendar.txt` & `calendar_dates.txt` — Regular operating days and schedule exceptions.\r   * `shapes.txt` (optional) — Ordered GPS coordinates for drawing route paths on maps.\r * **GTFS Realtime:** Protocol Buffers (`.proto`) feeds for live vehicle positions, trip updates/delays, and service alerts.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^7.9.1",
+    "redis": "^6.4.0"
+  }
+}

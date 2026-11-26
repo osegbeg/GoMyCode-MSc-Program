@@ -268,3 +268,58 @@ select:focus {
   color: #64748b;
   border: 1px dashed #cbd5e1;
 }
+
+.task-done-title {
+  text-decoration: line-through;
+  color: #64748b;
+}
+
+.edit-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.card-actions {
+  display: flex;
+  gap: 0.45rem;
+  margin-top: 0.5rem;
+}
+
+.btn-sm {
+  flex: 1;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.btn-complete {
+  background: #ecfdf5;
+  color: #065f46;
+  border-color: #a7f3d0;
+}
+
+.btn-edit {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border-color: #bfdbfe;
+}
+
+.btn-delete {
+  background: #fef2f2;
+  color: #b91c1c;
+  border-color: #fecaca;
+}
+
+.btn-save {
+  background: #16a34a;
+  color: #ffffff;
+}
+
+.btn-cancel {
+  background: #e2e8f0;
+  color: #334155;
+}

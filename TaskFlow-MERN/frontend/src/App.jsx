@@ -40,6 +40,16 @@ export default function App() {
     setTasks((prev) => [newTask, ...prev]);
   };
 
+  const handleTaskUpdated = (updatedTask) => {
+    setTasks((prev) =>
+      prev.map((task) => (task._id === updatedTask._id ? updatedTask : task))
+    );
+  };
+
+  const handleTaskDeleted = (deletedId) => {
+    setTasks((prev) => prev.filter((task) => task._id !== deletedId));
+  };
+
   if (!user) {
     return (
       <div className="app-shell auth-wrapper">
@@ -56,7 +66,9 @@ export default function App() {
           <span className="tagline">Personal Workflow & Deadline Manager</span>
         </div>
         <div className="user-controls">
-          <span>Hi, <strong>{user.name}</strong></span>
+          <span>
+            Hi, <strong>{user.name}</strong>
+          </span>
           <button onClick={handleLogout} className="btn-outline">
             Log Out
           </button>
@@ -70,7 +82,12 @@ export default function App() {
           <div className="section-header">
             <h3>Your Tasks ({tasks.length})</h3>
           </div>
-          <TaskList tasks={tasks} loading={loadingTasks} />
+          <TaskList
+            tasks={tasks}
+            loading={loadingTasks}
+            onTaskUpdated={handleTaskUpdated}
+            onTaskDeleted={handleTaskDeleted}
+          />
         </section>
       </main>
     </div>

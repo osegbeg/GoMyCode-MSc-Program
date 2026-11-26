@@ -1,0 +1,83 @@
+{
+  "rates": [
+    {
+      "id": "RATE-KEKE",
+      "operatorType": "Keke Napep (Tricycle)",
+      "zone": "Ikeja / Oshodi",
+      "amount": 800,
+      "durationHours": 24
+    },
+    {
+      "id": "RATE-BUS",
+      "operatorType": "Commercial Bus (Danfo / Korope)",
+      "zone": "Mile 12 - CMS Corridor",
+      "amount": 1500,
+      "durationHours": 24
+    },
+    {
+      "id": "RATE-OKADA",
+      "operatorType": "Dispatch / Okada Rider",
+      "zone": "Yaba / Surulere",
+      "amount": 500,
+      "durationHours": 24
+    },
+    {
+      "id": "RATE-BARROW",
+      "operatorType": "Market Trader / Wheelbarrow Pusher",
+      "zone": "Ladipo / Balogun Market",
+      "amount": 400,
+      "durationHours": 24
+    }
+  ],
+  "passes": [
+    {
+      "referenceCode": "LGS-IGR-455537",
+      "operatorName": "Futu Ball",
+      "identifier": "LSD-212-AJ",
+      "operatorType": "Commercial Bus (Danfo / Korope)",
+      "zone": "Yaba / Surulere",
+      "amount": 1500,
+      "issuedAt": "2026-11-26T01:52:16.570Z",
+      "expiresAt": "2026-11-27T01:52:16.570Z",
+      "remittanceStatus": "REMITTED_TO_IGR"
+    },
+    {
+      "referenceCode": "LGS-IGR-1001",
+      "operatorName": "Musa Abdullahi",
+      "identifier": "LAG-123-XA",
+      "operatorType": "Commercial Bus (Danfo / Korope)",
+      "zone": "Mile 12 - CMS Corridor",
+      "amount": 1500,
+      "issuedAt": "2026-11-25T21:42:37.071Z",
+      "expiresAt": "2026-11-26T21:42:37.071Z",
+      "remittanceStatus": "REMITTED_TO_IGR"
+    },
+    {
+      "referenceCode": "LGS-IGR-1002",
+      "operatorName": "Chinedu Okafor",
+      "identifier": "KKE-884-IKJ",
+      "operatorType": "Keke Napep (Tricycle)",
+      "zone": "Ikeja / Oshodi",
+      "amount": 800,
+      "issuedAt": "2026-11-26T01:52:36.715Z",
+      "expiresAt": "2026-11-27T01:52:36.715Z",
+      "remittanceStatus": "REMITTED_TO_IGR"
+    }
+  ],
+  "verificationLogs": [
+    {
+      "logId": "CHK-1795657819666",
+      "query": "LGS-IGR-1001",
+      "officerName": "Inspector Adewale",
+      "outcome": "VALID_ACTIVE_PASS",
+      "checkedAt": "2026-11-26T01:50:19.666Z"
+    },
+    {
+      "logId": "CHK-1795657795801",
+      "query": "LGS-IGR-1002",
+      "officerName": "Inspector Adewale",
+      "outcome": "PASS_EXPIRED",
+      "checkedAt": "2026-11-26T01:49:55.801Z"
+    }
+  ]
+}

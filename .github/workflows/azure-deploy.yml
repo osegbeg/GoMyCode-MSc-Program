@@ -1,0 +1,41 @@
+name: Build, Test & Deploy to Azure App Service
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "Capstone Project - Lagos Digital Levy Portal/**"
+      - ".github/workflows/azure-deploy.yml"
+  workflow_dispatch:
+
+jobs:
+  build-test-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install & Test Backend
+        working-directory: Capstone Project - Lagos Digital Levy Portal/server
+        run: |
+          npm install
+          npm test
+
+      - name: Install & Build React Frontend
+        working-directory: Capstone Project - Lagos Digital Levy Portal/client
+        run: |
+          npm install
+          npm run build
+
+      - name: Deploy Combined App to Azure Web App
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: "lagos-digital-levy-portal"
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          package: "Capstone Project - Lagos Digital Levy Portal"
